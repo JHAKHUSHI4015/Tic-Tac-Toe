@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Winner Popup -->
+    <div class="winner-container hide">
+        <div class="winner-card">
+            <h2 id="msg">🎉 Winner is X</h2>
+            <button id="new-btn">New Game</button>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <h1>Tic Tac Toe</h1>
+
+        <!-- Turn -->
+        <h2 id="turn">Turn : O</h2>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+
+            <div class="score-card">
+                <h3>Player O</h3>
+                <p id="scoreO">0</p>
+            </div>
+
+            <div class="score-card">
+                <h3>Draw</h3>
+                <p id="drawScore">0</p>
+            </div>
+
+            <div class="score-card">
+                <h3>Player X</h3>
+                <p id="scoreX">0</p>
+            </div>
+
+        </div>
+
+        <!-- Game Board -->
+        <div class="container">
+
+            <div class="game">
+
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+
+            </div>
+
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button id="reset">Reset Game</button>
+
+        </div>
+
+    </div>
+
+    <script src="scripting.js"></script>
+
+</body>
+</html>
