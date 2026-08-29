@@ -197,24 +197,83 @@ h1 {
 
 /* Responsive */
 
-@media(max-width:600px){
+/* Responsive - Mobile */
+@media (max-width: 600px) {
 
-    h1{
-        font-size:2.2rem;
+    body {
+        align-items: flex-start;
     }
 
-    .scoreboard{
-        flex-direction:column;
+    .main {
+        width: 100%;
+        padding: 20px 12px;
     }
 
-    .game{
-
-        grid-template-columns:repeat(3,90px);
-        grid-template-rows:repeat(3,90px);
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
     }
 
-    .box{
+    #turn {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
 
-        font-size:2.5rem;
+    /* Scoreboard - keep all 3 cards in one row */
+    .scoreboard {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .score-card {
+        min-width: 0;
+        padding: 10px 5px;
+        border-radius: 12px;
+    }
+
+    .score-card h3 {
+        font-size: 0.75rem;
+    }
+
+    .score-card p {
+        font-size: 1.4rem;
+        margin-top: 2px;
+    }
+
+    /* Game Board */
+    .container {
+        margin-bottom: 20px;
+    }
+
+    .game {
+        grid-template-columns: repeat(3, 75px);
+        grid-template-rows: repeat(3, 75px);
+        gap: 8px;
+    }
+
+    .box {
+        border-radius: 12px;
+        font-size: 2rem;
+    }
+
+    /* Buttons */
+    #reset,
+    #new-btn {
+        padding: 11px 22px;
+        font-size: 0.9rem;
+    }
+
+    /* Winner popup */
+    .winner-card {
+        width: calc(100% - 40px);
+        max-width: 340px;
+        padding: 30px 20px;
+    }
+
+    #msg {
+        font-size: 1.6rem;
     }
 }
